@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coming Soon — The Blurgblog</title>
+  <meta name="description" content="The Blurgblog review schedule: the martial arts tapes on order, in transit and in the VCR right now.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Monoton&family=Permanent+Marker&family=VT323&family=Archivo+Black&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="soon">
+
+  <div class="crt" aria-hidden="true"></div>
+  <div class="tracking" aria-hidden="true"></div>
+  <div class="osd" aria-hidden="true">
+    <span id="osd-mode">▶ PLAY</span>
+    <span id="osd-time">SP 0:00:00</span>
+  </div>
+
+  <nav class="aisle-nav" aria-label="Site">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">BLURG<span>BLOG</span></a>
+      <div class="nav-links">
+        <a href="index.html" data-page="shelves">Shelves</a>
+        <a href="coming-soon.html" data-page="soon">Coming Soon</a>
+        <a href="awards.html" data-page="awards">Golden Blurgs</a>
+        <a href="claw.html" data-page="claw">Claw Machine</a>
+        <a href="returns.html" data-page="returns">Returns</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero soon-hero">
+    <div class="letterboard" data-speed="-0.12">
+      <h1 class="lb-line" data-letters="COMING SOON">Coming Soon</h1>
+      <p class="lb-line small" data-letters="NEW TAPES EVERY FRIDAY">New tapes every Friday</p>
+    </div>
+    <p class="page-intro">The review schedule. What's in the VCR, what's being written up, and what's still on the truck.</p>
+  </header>
+
+  <main class="soon-main">
+
+    <section class="next-up" id="next-up" aria-labelledby="next-title">
+      <!-- filled by js/soon.js -->
+    </section>
+
+    <section class="schedule" aria-labelledby="sched-title">
+      <h2 class="marker section-title" id="sched-title">The Return Pile</h2>
+      <p class="section-sub">Every tape headed for the shelves, in release order. Hover a tape to spin the reels.</p>
+      <ol class="spines" id="spines"></ol>
+      <div class="legend" aria-label="Status key">
+        <span class="sp-status s-reviewing">REWINDING NOW</span><span>Watching it right now</span>
+        <span class="sp-status s-writing">WATCHED · WRITING</span><span>Review being written</span>
+        <span class="sp-status s-in-transit">IN TRANSIT</span><span>Tape is on its way</span>
+        <span class="sp-status s-on-order">ON ORDER</span><span>It's on the list</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer-links"><a href="index.html">The Shelves</a> · <a href="awards.html">The Golden Blurgs</a> · <a href="claw.html">Claw Machine</a> · <a href="returns.html">Returns</a></p>
+    <p>© <span id="year"></span> The Blurgblog · No refunds on bad movies</p>
+  </footer>
+
+  <script src="js/reviews.js"></script>
+  <script src="js/upcoming.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/soon.js"></script>
+</body>
+</html>

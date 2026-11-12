@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Returns — The Blurgblog</title>
+  <meta name="description" content="The Blurgblog return drop box: leave a comment, argue about kung fu movies, and read what everyone else dropped off.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Monoton&family=Permanent+Marker&family=VT323&family=Archivo+Black&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/returns.css">
+</head>
+<body data-page="returns">
+
+  <div class="crt" aria-hidden="true"></div>
+  <div class="tracking" aria-hidden="true"></div>
+  <div class="osd" aria-hidden="true">
+    <span id="osd-mode">▶ PLAY</span>
+    <span id="osd-time">SP 0:00:00</span>
+  </div>
+
+  <nav class="aisle-nav" aria-label="Site">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">BLURG<span>BLOG</span></a>
+      <div class="nav-links">
+        <a href="index.html" data-page="shelves">Shelves</a>
+        <a href="coming-soon.html" data-page="soon">Coming Soon</a>
+        <a href="awards.html" data-page="awards">Golden Blurgs</a>
+        <a href="claw.html" data-page="claw">Claw Machine</a>
+        <a href="returns.html" data-page="returns">Returns</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="returns-main">
+
+    <!-- THE DROP BOX -->
+    <section class="dropzone" aria-labelledby="box-title">
+      <div class="street-light" aria-hidden="true"></div>
+      <div class="dropbox" id="dropbox">
+        <div class="db-dome" aria-hidden="true"></div>
+        <h1 class="db-title" id="box-title">Returns</h1>
+        <p class="db-sub">After hours? Drop your thoughts here.</p>
+
+        <div class="slot-wrap" aria-hidden="true">
+          <div class="slot" id="slot"><div class="flap" id="flap"><span>PUSH</span></div></div>
+        </div>
+
+        <form class="slip" id="return-form" novalidate>
+          <p class="slip-head"><span>RETURN SLIP</span><span id="slip-no">Nº 000000</span></p>
+
+          <label class="field">
+            <span>Name <em>(optional)</em></span>
+            <input id="f-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Anonymous renter">
+          </label>
+
+          <label class="field">
+            <span>Which tape?</span>
+            <select id="f-movie" name="movie"></select>
+          </label>
+
+          <label class="field">
+            <span>Comment</span>
+            <textarea id="f-comment" name="comment" rows="5" maxlength="600" required placeholder="Was it kung fu gold or a cardboard robot? Tell us."></textarea>
+            <small class="count" id="f-count">0 / 600</small>
+          </label>
+
+          <!-- spam trap: real people never see or fill this -->
+          <label class="trap" aria-hidden="true">Leave this empty <input type="text" name="website" id="f-trap" tabindex="-1" autocomplete="off"></label>
+
+          <button type="submit" class="drop-it" id="f-submit">Drop it in the slot ▲</button>
+          <p class="form-msg" id="f-msg" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="db-legs" aria-hidden="true"></div>
+      </div>
+      <a class="to-bin" href="#bin">See what's in the bin ▼</a>
+    </section>
+
+    <!-- THE BIN -->
+    <section class="bin" id="bin" aria-labelledby="bin-title">
+      <div class="bin-head">
+        <h2 class="marker" id="bin-title">The Return Bin</h2>
+        <p class="bin-count" id="bin-count">Checking the bin…</p>
+        <p class="mode-note" id="mode-note" hidden></p>
+      </div>
+      <div class="cases" id="cases"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer-links"><a href="index.html">The Shelves</a> · <a href="coming-soon.html">Coming Soon</a> · <a href="awards.html">The Golden Blurgs</a> · <a href="claw.html">Claw Machine</a></p>
+    <p>© <span id="year"></span> The Blurgblog · Be kind, please rewind</p>
+  </footer>
+
+  <script src="js/reviews.js"></script>
+  <script src="js/returns-config.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/returns.js"></script>
+</body>
+</html>

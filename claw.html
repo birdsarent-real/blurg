@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Claw of Doom — The Blurgblog</title>
+  <meta name="description" content="Play the Blurgblog claw machine and win a random martial arts movie rated 5.0 or lower on IMDb.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Monoton&family=Permanent+Marker&family=VT323&family=Archivo+Black&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/claw.css">
+</head>
+<body data-page="claw">
+
+  <div class="crt" aria-hidden="true"></div>
+  <div class="tracking" aria-hidden="true"></div>
+  <div class="osd" aria-hidden="true">
+    <span id="osd-mode">▶ PLAY</span>
+    <span id="osd-time">SP 0:00:00</span>
+  </div>
+
+  <nav class="aisle-nav" aria-label="Site">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">BLURG<span>BLOG</span></a>
+      <div class="nav-links">
+        <a href="index.html" data-page="shelves">Shelves</a>
+        <a href="coming-soon.html" data-page="soon">Coming Soon</a>
+        <a href="awards.html" data-page="awards">Golden Blurgs</a>
+        <a href="claw.html" data-page="claw">Claw Machine</a>
+        <a href="returns.html" data-page="returns">Returns</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="arcade">
+    <p class="arcade-intro">Every tape in this machine is a martial arts movie rated <b>5.0 or lower</b> on IMDb. Grab one. Watch it. No refunds.</p>
+
+    <div class="cabinet">
+      <header class="marquee">
+        <span class="bulbs" aria-hidden="true"></span>
+        <h1>The Claw<br><span>of Doom</span></h1>
+        <p class="marquee-sub" id="pool-count">BAD MOVIES INSIDE</p>
+      </header>
+
+      <div class="glass" id="glass" aria-label="Claw machine. Tap or click here to aim the claw.">
+        <div class="rail" aria-hidden="true"></div>
+        <div class="carriage" id="carriage" aria-hidden="true">
+          <div class="cable" id="cable"></div>
+          <div class="claw" id="claw">
+            <div class="hub"></div>
+            <div class="prong l"></div>
+            <div class="prong r"></div>
+            <div class="held" id="held"></div>
+          </div>
+        </div>
+        <div class="pile" id="pile" aria-hidden="true"></div>
+        <div class="chute" aria-hidden="true"><span>PRIZE</span></div>
+        <div class="glare" aria-hidden="true"></div>
+      </div>
+
+      <div class="panel">
+        <div class="lcd" id="msg" role="status" aria-live="polite">FREE PLAY · PRESS DROP</div>
+        <div class="controls">
+          <div class="dpad">
+            <button type="button" class="arrow" id="left" aria-label="Move claw left">◀</button>
+            <button type="button" class="arrow" id="right" aria-label="Move claw right">▶</button>
+          </div>
+          <button type="button" class="drop" id="drop">DROP</button>
+        </div>
+        <p class="hint">Hold the arrows (or ← →) to aim · Space or DROP to grab · or just tap the glass</p>
+        <div class="coin" aria-hidden="true"><span></span>25¢</div>
+      </div>
+    </div>
+
+    <section class="winnings" aria-labelledby="win-title">
+      <h2 class="marker" id="win-title">Your Prize Shelf</h2>
+      <p class="section-note" id="win-empty">Nothing yet. The claw awaits.</p>
+      <ol class="win-list" id="win-list"></ol>
+      <button type="button" class="clear-wins" id="clear-wins" hidden>Empty the shelf</button>
+    </section>
+  </main>
+
+  <!-- prize reveal -->
+  <div class="prize" id="prize" hidden>
+    <div class="prize-backdrop" data-close></div>
+    <article class="prize-card" role="dialog" aria-modal="true" aria-labelledby="pz-title" tabindex="-1">
+      <p class="pz-kicker">★ YOU WON ★</p>
+      <div class="pz-tape" id="pz-cover"></div>
+      <h2 id="pz-title"></h2>
+      <p class="pz-meta" id="pz-meta"></p>
+      <div class="pz-rating" id="pz-rating"></div>
+      <p class="pz-quip" id="pz-quip"></p>
+      <div class="pz-actions">
+        <a class="pz-imdb" id="pz-imdb" href="#" target="_blank" rel="noopener">See it on IMDb ↗</a>
+        <button type="button" class="pz-again" data-close>Play again</button>
+      </div>
+      <p class="pz-fine">Rating from an IMDb snapshot taken Nov 2026 — it may have changed since.</p>
+    </article>
+  </div>
+
+  <footer class="footer">
+    <p class="footer-links"><a href="index.html">The Shelves</a> · <a href="coming-soon.html">Coming Soon</a> · <a href="awards.html">The Golden Blurgs</a> · <a href="returns.html">Returns</a></p>
+    <p>© <span id="year"></span> The Blurgblog · No refunds on bad movies</p>
+  </footer>
+
+  <script src="js/claw-data.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/claw.js"></script>
+</body>
+</html>

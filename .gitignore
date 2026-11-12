@@ -1,0 +1,9 @@
+# Operating system clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor / temp files
+*.tmp
+*.swp
+*~

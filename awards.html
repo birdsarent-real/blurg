@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Golden Blurgs — The Blurgblog</title>
+  <meta name="description" content="The Golden Blurgs: the Blurgblog's awards for the best scenes in bad and classic martial arts movies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Monoton&family=Permanent+Marker&family=VT323&family=Archivo+Black&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="awards">
+
+  <div class="crt" aria-hidden="true"></div>
+  <div class="tracking" aria-hidden="true"></div>
+  <div class="osd" aria-hidden="true">
+    <span id="osd-mode">▶ PLAY</span>
+    <span id="osd-time">SP 0:00:00</span>
+  </div>
+
+  <nav class="aisle-nav" aria-label="Site">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">BLURG<span>BLOG</span></a>
+      <div class="nav-links">
+        <a href="index.html" data-page="shelves">Shelves</a>
+        <a href="coming-soon.html" data-page="soon">Coming Soon</a>
+        <a href="awards.html" data-page="awards">Golden Blurgs</a>
+        <a href="claw.html" data-page="claw">Claw Machine</a>
+        <a href="returns.html" data-page="returns">Returns</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero awards-hero">
+    <div class="spotlight left" aria-hidden="true"></div>
+    <div class="spotlight right" aria-hidden="true"></div>
+    <div class="trophy" aria-hidden="true">
+      <svg viewBox="0 0 200 230">
+        <defs>
+          <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fff3b0"/>
+            <stop offset=".35" stop-color="#f5c542"/>
+            <stop offset=".7" stop-color="#b8860b"/>
+            <stop offset="1" stop-color="#ffe27a"/>
+          </linearGradient>
+        </defs>
+        <!-- golden VHS tape -->
+        <rect x="20" y="10" width="160" height="96" rx="8" fill="url(#gold)" stroke="#7a5a00" stroke-width="3"/>
+        <rect x="40" y="24" width="120" height="24" rx="3" fill="#fff8d8" stroke="#7a5a00" stroke-width="2"/>
+        <text x="100" y="42" text-anchor="middle" font-family="Bungee, sans-serif" font-size="15" fill="#7a5a00">BLURG</text>
+        <rect x="52" y="58" width="96" height="34" rx="6" fill="#5a4000"/>
+        <circle cx="74" cy="75" r="12" fill="url(#gold)"/><circle cx="74" cy="75" r="4" fill="#5a4000"/>
+        <circle cx="126" cy="75" r="12" fill="url(#gold)"/><circle cx="126" cy="75" r="4" fill="#5a4000"/>
+        <!-- stem and base -->
+        <path d="M88 106 L112 106 L106 150 L94 150 Z" fill="url(#gold)" stroke="#7a5a00" stroke-width="2"/>
+        <ellipse cx="100" cy="152" rx="34" ry="8" fill="url(#gold)" stroke="#7a5a00" stroke-width="2"/>
+        <path d="M50 170 L150 170 L160 220 L40 220 Z" fill="#1c1c1c" stroke="#7a5a00" stroke-width="3"/>
+        <rect x="70" y="184" width="60" height="22" fill="url(#gold)"/>
+      </svg>
+    </div>
+    <h1 class="gold-title">The Golden Blurgs</h1>
+    <p class="page-intro">Awards for the greatest scenes ever committed to magnetic tape. Press play on any TV.</p>
+  </header>
+
+  <main class="awards-main">
+    <div class="awards-list" id="awards"></div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-links"><a href="index.html">The Shelves</a> · <a href="coming-soon.html">Coming Soon</a> · <a href="claw.html">Claw Machine</a> · <a href="returns.html">Returns</a></p>
+    <p>© <span id="year"></span> The Blurgblog · No refunds on bad movies</p>
+  </footer>
+
+  <script src="js/reviews.js"></script>
+  <script src="js/awards.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/awards-page.js"></script>
+</body>
+</html>

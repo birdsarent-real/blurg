@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Blurgblog — Bad &amp; Classic Martial Arts Movie Reviews</title>
+  <meta name="description" content="The Blurgblog: reviews of bad and classic martial arts movies from around the world, shelved like your old neighborhood video store.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Monoton&family=Permanent+Marker&family=VT323&family=Archivo+Black&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="shelves">
+
+  <!-- VHS overlays -->
+  <div class="crt" aria-hidden="true"></div>
+  <div class="tracking" aria-hidden="true"></div>
+  <div class="osd" aria-hidden="true">
+    <span id="osd-mode">▶ PLAY</span>
+    <span id="osd-time">SP 0:00:00</span>
+  </div>
+
+  <!-- STOREFRONT -->
+  <header class="storefront" id="top">
+    <div class="bricks" data-speed="0.35"></div>
+    <div class="awning" aria-hidden="true"></div>
+
+    <div class="sign-wrap" data-speed="-0.15">
+      <span class="neon-the">the</span>
+      <h1 class="neon" aria-label="The Blurgblog">BLURG<span>BLOG</span></h1>
+      <div class="neon-sub">VIDEO&nbsp;·&nbsp;REVIEWS&nbsp;·&nbsp;RENTALS</div>
+    </div>
+
+    <p class="hero-copy" data-speed="-0.05">Bad &amp; classic martial arts movies from around the world,<br>reviewed one rental at a time.</p>
+
+    <div class="window-stuff" data-speed="0.12" aria-hidden="true">
+      <div class="open-sign">OPEN</div>
+      <div class="hours-card">
+        <b>STORE HOURS</b>
+        <span>Open late.</span>
+        <span>Kung fu never sleeps.</span>
+      </div>
+    </div>
+
+    <a class="scroll-cue" href="#store">Enter the store <span>▼</span></a>
+  </header>
+
+  <!-- FILTER BAR -->
+  <nav class="aisle-nav" aria-label="Filter the shelves">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#top">BLURG<span>BLOG</span></a>
+      <div class="nav-links">
+        <a href="index.html" data-page="shelves">Shelves</a>
+        <a href="coming-soon.html" data-page="soon">Coming Soon</a>
+        <a href="awards.html" data-page="awards">Golden Blurgs</a>
+        <a href="claw.html" data-page="claw">Claw Machine</a>
+        <a href="returns.html" data-page="returns">Returns</a>
+      </div>
+      <div class="chips" id="country-chips" role="group" aria-label="Filter by country"></div>
+      <label class="search">
+        <span class="sr-only">Search the shelves</span>
+        <input id="search" type="search" placeholder="Search the shelves…" autocomplete="off">
+      </label>
+    </div>
+  </nav>
+
+  <main id="store">
+
+    <section class="aisle" id="aisle-classic">
+      <div class="aisle-sign" aria-hidden="true"><span class="chain"></span><div class="sign-board"><small>AISLE 1</small>CERTIFIED CLASSICS</div></div>
+      <h2 class="sr-only">Certified Classics</h2>
+      <p class="aisle-blurb">The legends. The ones that made the whole store possible.</p>
+      <div class="shelf" data-cat="classic"></div>
+    </section>
+
+    <section class="pinned" id="staff-picks" aria-label="Staff Picks">
+      <div class="pinned-sticky">
+        <div class="pinned-head">
+          <h2 class="marker">Staff Picks</h2>
+          <p>Hand-picked by the guy behind the counter. Scroll to browse →</p>
+        </div>
+        <div class="pinned-track" id="picks-track"></div>
+        <div class="pinned-progress"><span id="picks-bar"></span></div>
+      </div>
+    </section>
+
+    <section class="aisle" id="aisle-bad">
+      <div class="aisle-sign bad" aria-hidden="true"><span class="chain"></span><div class="sign-board"><small>AISLE 2</small>SO BAD IT'S GLORIOUS</div></div>
+      <h2 class="sr-only">So Bad It's Glorious</h2>
+      <p class="aisle-blurb">Cardboard robots, ghost Bruces and taekwondo synth-rock. Proceed with snacks.</p>
+      <div class="shelf" data-cat="bad"></div>
+    </section>
+
+    <p class="empty" id="empty" hidden>Nothing on the shelves matches that. Try another search — or ask the guy at the counter.</p>
+  </main>
+
+  <!-- COUNTER -->
+  <section class="counter" id="about">
+    <div class="counter-top">
+      <div class="receipt">
+        <h2>THE BLURGBLOG</h2>
+        <p class="r-sub">MEMBER SINCE FOREVER</p>
+        <hr>
+        <p>Movie reviews of bad and classic martial arts films from Hong Kong, Japan, Thailand, Indonesia, the Philippines and beyond.</p>
+        <p>Every tape gets two scores:</p>
+        <ul>
+          <li><b>CRAFT</b><span>is it actually good?</span></li>
+          <li><b>FUN</b><span>is it a good time?</span></li>
+        </ul>
+        <p>Sometimes those numbers are wildly different. That's the point.</p>
+        <hr>
+        <p class="r-total"><span>LATE FEES</span><span>$0.00</span></p>
+        <p class="r-thanks">★ BE KIND, PLEASE REWIND ★</p>
+      </div>
+      <div class="return-slot" aria-hidden="true">
+        <div class="slot"></div>
+        <span>RETURNS</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer-links"><a href="coming-soon.html">Coming Soon</a> · <a href="awards.html">The Golden Blurgs</a> · <a href="#top">Back to the front ▲</a> · <a href="claw.html">Claw Machine</a> · <a href="returns.html">Returns</a></p>
+    <p>© <span id="year"></span> The Blurgblog · No refunds on bad movies</p>
+  </footer>
+
+  <!-- REVIEW (back of the box) -->
+  <div class="modal" id="review" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <article class="box-back" role="dialog" aria-modal="true" aria-labelledby="rv-title" tabindex="-1">
+      <button class="close" data-close aria-label="Close review">✕</button>
+      <div class="bb-cover" id="rv-cover"></div>
+      <div class="bb-body">
+        <p class="bb-meta" id="rv-meta"></p>
+        <h2 id="rv-title"></h2>
+        <p class="bb-tag" id="rv-tag"></p>
+        <div class="bb-scores" id="rv-scores"></div>
+        <p class="bb-verdict" id="rv-verdict"></p>
+        <div class="bb-review" id="rv-text"></div>
+        <div class="bb-notes">
+          <div><h3>Best moment</h3><p id="rv-best"></p></div>
+          <div><h3>Rent it if…</h3><p id="rv-watch"></p></div>
+        </div>
+        <div class="bb-fine">
+          <span id="rv-credits"></span>
+          <span class="barcode" aria-hidden="true"></span>
+        </div>
+        <nav class="bb-nav">
+          <button id="rv-prev">◀◀ REW</button>
+          <button id="rv-next">FF ▶▶</button>
+        </nav>
+      </div>
+    </article>
+  </div>
+
+  <script src="js/reviews.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

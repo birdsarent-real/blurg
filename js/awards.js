@@ -46,7 +46,7 @@ window.AWARDS = [
     slug: "heart-of-dragon",
     scene: "Sammo Hung as Dodo",
     why: "Sammo plays Ted's older brother, a man with an intellectual disability, with real warmth and zero vanity. But 1985 played a lot of Dodo for laughs, and plenty of those gags land very differently today. The heart is genuine; the jokes are a time capsule.",
-    youtube: "", gif: "", video: "", link: ""
+    youtube: "", gif: "images/awards/sammo.gif", video: "", link: ""
   },
   {
     award: "Best Villain Weapon",
@@ -67,13 +67,13 @@ window.AWARDS = [
     slug: "lady-snowblood",
     scene: "Through the snow, umbrella in hand",
     why: "Meiko Kaji doesn't need to say a word. The walk says it all.",
-    youtube: "", gif: "", video: "", link: ""
+    youtube: "", gif: "images/awards/ladysnowblood.gif", video: "", link: ""
   },
   {
     award: "Most Unhinged Premise",
     slug: "robo-vampire",
     scene: "Robo's grand entrance",
     why: "A cardboard robot cop arrives to fight hopping vampires. The judges were speechless. So was the editor.",
-    youtube: "", gif: "", video: "", link: ""
+    youtube: "", gif: "images/awards/robovamp.gif", video: "", link: ""
   }
 ];

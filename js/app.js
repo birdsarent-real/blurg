@@ -35,7 +35,10 @@
     var cat = shelf.getAttribute("data-cat");
     shelf.innerHTML =
       REVIEWS.filter(function (m) { return m.category === cat; }).map(tapeHTML).join("") +
-      '<p class="shelf-empty" hidden>All rented out! Nothing here matches.</p>';
+      '<p class="shelf-empty" hidden>All rented out! Nothing here matches.</p>' +
+      (cat === "bad"
+        ? '<p class="shelf-tag quote">Quality is like a circle.<span>If it\'s bad enough, it comes all the way back around to good.</span></p>'
+        : '<a class="shelf-tag" href="coming-soon.html">Room for new arrivals<span>See what\'s coming soon →</span></a>');
   });
 
   var picksTrack = $("#picks-track");
@@ -94,7 +97,6 @@
   var pinned = $("#staff-picks");
   var bar = $("#picks-bar");
   var pin = { top: 0, height: 0, dist: 0 };
-
   B.onResize(function () {
     pin.dist = Math.max(0, picksTrack.scrollWidth - window.innerWidth);
     pinned.style.height = (window.innerHeight + pin.dist) + "px";

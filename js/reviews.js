@@ -220,6 +220,52 @@ window.REVIEWS = [
     watchIf: "You want to see the bar for action movies get raised."
   },
   {
+    slug: "police-story-2",
+    title: "Police Story 2",
+    year: 1988,
+    country: "Hong Kong",
+    director: "Jackie Chan",
+    starring: "Jackie Chan, Maggie Cheung, Bill Tung",
+    category: "classic",
+    craft: 4.5, fun: 4.5,
+    tagline: "He's been demoted. He's not been defeated.",
+    colors: ["#ff6a00", "#1a1f4a", "#ffffff"],
+    layout: 3,
+    poster: "images/police-story-2-poster.jpg",
+    staffPick: false,
+    verdict: "A sequel that trades the bus stunt for a playground brawl and a fireworks factory, and somehow comes out swinging even.",
+    review: [
+      "Kevin Chan Ka-kui is back, busted down to traffic duty after the chaos of the first film, with the crime boss he put away now out and making his life miserable. Then a gang of bombers starts extorting the city, and the demotion stops mattering very fast.",
+      "Jackie directs as well as stars, and the action is built like clockwork: a playground fight that turns monkey bars and slides into weapons, a restaurant scrap, and a finale in a fireworks factory where everything that can explode does. Maggie Cheung gets more to do this time, and her frustration with a boyfriend who keeps cancelling dates to get blown up is half the charm.",
+      "It's longer and talkier between the set pieces than the original. But when it kicks off, it's Jackie at the absolute peak of his powers, and the outtakes alone are worth the rental fee."
+    ],
+    bestMoment: "The playground fight. Every piece of equipment becomes a weapon or an escape route.",
+    watchIf: "You've seen Police Story and want to watch Jackie get hurt in brand-new ways."
+  },
+  {
+    slug: "heart-of-dragon",
+    title: "Heart of Dragon",
+    year: 1985,
+    country: "Hong Kong",
+    director: "Sammo Hung",
+    starring: "Jackie Chan, Sammo Hung, Emily Chu",
+    category: "classic",
+    craft: 5, fun: 5,
+    tagline: "Some fights are for family.",
+    colors: ["#c8102e", "#1a0a05", "#ffd166"],
+    layout: 2,
+    poster: "images/heart-of-dragon-poster.jpg",
+    staffPick: false,
+    verdict: "The most surprising tape in the store: a family drama first, a kung fu movie second, and better at both than it has any right to be.",
+    review: [
+      "Jackie plays Ted, a cop who dreams of sailing the world but can't, because he's the sole carer for his older brother Dodo, played by Sammo Hung, who has an intellectual disability. When Dodo gets tangled up with a gang of thieves, Ted has to choose between the life he wants and the brother he loves.",
+      "Fans expecting wall-to-wall action got a shock in 1985, because this is mostly a drama, and a genuinely affecting one. Sammo directs with real tenderness and gives himself the hardest role of his career. Jackie, playing the straight man for once, is quietly excellent.",
+      "Then the finale arrives, a construction-site showdown that is as good as anything either of them ever shot, and it lands twice as hard because you care about these brothers. Some of the 80s comedy around Dodo hasn't aged gracefully (more on that at the Golden Blurgs), but the heart of it is real. A five-star rental."
+    ],
+    bestMoment: "The construction-site finale: Jackie at full speed with everything on the line.",
+    watchIf: "You want a Jackie Chan movie that might make you cry before it makes you wince."
+  },
+  {
     slug: "miami-connection",
     title: "Miami Connection",
     year: 1987,
@@ -277,6 +323,7 @@ window.REVIEWS = [
     tagline: "Part robot. Part cop. All confusing.",
     colors: ["#9cff3a", "#0b1d05", "#c0c0c0"],
     layout: 4,
+    poster: "images/robo-vampire-poster.jpg",
     staffPick: false,
     verdict: "Two movies stapled together and a robot suit made from cardboard dreams.",
     review: [

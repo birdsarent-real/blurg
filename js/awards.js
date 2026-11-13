@@ -25,14 +25,14 @@ window.AWARDS = [
     slug: "the-raid",
     scene: "Two cops versus Mad Dog",
     why: "Exhausting, brutal, perfectly paced. Ends with a fluorescent light tube doing a job it was never designed for.",
-    youtube: "", gif: "", video: "", link: ""
+    youtube: "", gif: "images/awards/the-raid-2v1.gif", video: "", link: ""
   },
   {
     award: "Best Training Montage",
     slug: "36th-chamber-of-shaolin",
     scene: "The water-bucket chamber",
     why: "Arms out, buckets full, knives strapped to his elbows. Gordon Liu suffers so you don't have to.",
-    youtube: "", gif: "", video: "", link: ""
+    youtube: "", gif: "images/awards/36th.gif", video: "", link: ""
   },
   {
     award: "Best Use of Mirrors",
@@ -42,10 +42,10 @@ window.AWARDS = [
     youtube: "", gif: "images/awards/enter-the-dragon-mirrors.gif", video: "", link: ""
   },
   {
-    award: "Most Heart",
-    slug: "miami-connection",
-    scene: "Dragon Sound takes the stage",
-    why: "Taekwondo orphans with keytars, singing about friendship. It's impossible to stay cynical.",
+    award: "Has This Aged Poorly? Award",
+    slug: "heart-of-dragon",
+    scene: "Sammo Hung as Dodo",
+    why: "Sammo plays Ted's older brother, a man with an intellectual disability, with real warmth and zero vanity. But 1985 played a lot of Dodo for laughs, and plenty of those gags land very differently today. The heart is genuine; the jokes are a time capsule.",
     youtube: "", gif: "", video: "", link: ""
   },
   {
@@ -53,14 +53,14 @@ window.AWARDS = [
     slug: "master-of-the-flying-guillotine",
     scene: "The guillotine's first flight",
     why: "It's a hat. On a chain. It takes heads off. Nothing else was even nominated.",
-    youtube: "", gif: "", video: "", link: ""
+    youtube: "", gif: "images/awards/masteroftheflyingguillotine.gif", video: "", link: ""
   },
   {
     award: "Stunt Nobody Should Have Attempted",
     slug: "ong-bak",
     scene: "The street chase",
     why: "Tony Jaa leaps through rings of barbed wire and over moving cars. No wires, no CGI, possibly no insurance.",
-    youtube: "", gif: "", video: "", link: ""
+    youtube: "", gif: "images/awards/ongbak.gif", video: "", link: ""
   },
   {
     award: "Coolest Walk",

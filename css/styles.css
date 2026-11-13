@@ -319,7 +319,7 @@ button { font: inherit; color: inherit; }
   grid-auto-rows: var(--rh);
   justify-items: center;
   align-items: end;
-  padding: 0 18px;
+  padding: 0 18px var(--rh);   /* bottom padding = one extra, empty shelf row */
   border-left: 18px solid var(--wood-dark);
   border-right: 18px solid var(--wood-dark);
   border-top: 18px solid var(--wood-dark);
@@ -339,6 +339,33 @@ button { font: inherit; color: inherit; }
   border-radius: 4px 4px 0 0;
   perspective: 1000px;
 }
+/* handwritten tag sitting in the empty bottom row */
+.shelf-tag {
+  position: absolute; left: 50%; z-index: 2;
+  bottom: calc(var(--board) + (var(--rh) - var(--board)) / 2 - 34px);
+  transform: translateX(-50%) rotate(-2deg);
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  padding: 12px 18px 10px;
+  background: #fffbea; color: #222; text-decoration: none; text-align: center;
+  font-family: "Permanent Marker", cursive; font-size: 18px; line-height: 1.1;
+  box-shadow: 4px 6px 0 rgba(0,0,0,.4);
+  transition: transform .2s;
+  white-space: nowrap;
+}
+.shelf-tag::before {   /* tape holding it up */
+  content: ""; position: absolute; top: -9px; left: 50%; width: 56px; height: 18px; margin-left: -28px;
+  background: rgba(255,255,200,.55); transform: rotate(3deg);
+}
+.shelf-tag span { font-family: "VT323", monospace; font-size: 17px; color: var(--red); }
+.shelf-tag:hover, .shelf-tag:focus-visible { transform: translateX(-50%) rotate(0deg) scale(1.04); outline: none; }
+.shelf-tag:focus-visible { box-shadow: 0 0 0 3px var(--neon-cyan), 4px 6px 0 rgba(0,0,0,.4); }
+.shelf-tag.quote {
+  margin: 0; white-space: normal; width: max-content; max-width: min(380px, 80%);
+  transform: translateX(-50%) rotate(2deg);
+}
+.shelf-tag.quote:hover { transform: translateX(-50%) rotate(2deg); }
+@media (max-width: 640px) { .shelf-tag { font-size: 15px; padding: 10px 12px 8px; } .shelf-tag span { font-size: 15px; } }
+
 .shelf-empty {
   grid-column: 1 / -1; align-self: center;
   font-family: "Permanent Marker", cursive; font-size: 22px; color: var(--ink-dim);

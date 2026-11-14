@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Backrooms — The Blurgblog</title>
+  <meta name="description" content="Members only. The Blurgblog's secret book club.">
+  <!-- hidden page: ask search engines not to list it -->
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Monoton&family=Permanent+Marker&family=VT323&family=Archivo+Black&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/backrooms.css">
+</head>
+<body data-page="backrooms">
+
+  <div class="crt" aria-hidden="true"></div>
+  <div class="tracking" aria-hidden="true"></div>
+  <div class="osd" aria-hidden="true">
+    <span id="osd-mode">▶ PLAY</span>
+    <span id="osd-time">SP 0:00:00</span>
+  </div>
+
+  <nav class="aisle-nav" aria-label="Site">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">BLURG<span>BLOG</span></a>
+      <div class="nav-links">
+        <a href="index.html" data-page="shelves">Shelves</a>
+        <a href="coming-soon.html" data-page="soon">Coming Soon</a>
+        <a href="awards.html" data-page="awards">Golden Blurgs</a>
+        <a href="claw.html" data-page="claw">Claw Machine</a>
+        <a href="returns.html" data-page="returns">Returns</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="backroom">
+
+    <!-- THE DOOR: swings open as you scroll -->
+    <section class="door-scene" id="door-scene" aria-labelledby="door-title">
+      <div class="door-sticky">
+        <div class="bulb" aria-hidden="true"></div>
+        <div class="doorway">
+          <div class="room-glow">
+            <p class="welcome">Welcome to<br><b>the book club</b></p>
+          </div>
+          <div class="door" id="door">
+            <div class="door-window" aria-hidden="true"></div>
+            <h1 class="door-sign" id="door-title">The<br>Backrooms</h1>
+            <p class="members-only">MEMBERS ONLY</p>
+            <div class="door-handle" aria-hidden="true"></div>
+            <p class="door-note">You found the door.<br>That makes you a member.</p>
+          </div>
+        </div>
+        <p class="door-cue" id="door-cue">Scroll to open the door ▼</p>
+      </div>
+    </section>
+
+    <!-- NOW READING -->
+    <section class="now-reading" aria-labelledby="nr-title">
+      <h2 class="marker" id="nr-title">Now Reading</h2>
+      <div class="nr-grid">
+        <div class="book3d reveal" id="nr-book" aria-hidden="true"></div>
+        <div class="nr-info reveal">
+          <h3 id="nr-name"></h3>
+          <p class="nr-sub" id="nr-sub"></p>
+          <p class="nr-blurb" id="nr-blurb"></p>
+          <p class="nr-where" id="nr-where"></p>
+          <a class="gr-link" id="nr-goodreads" href="#" target="_blank" rel="noopener" hidden>See it on Goodreads ↗</a>
+        </div>
+        <div class="due-wrap reveal">
+          <div class="due-card">
+            <p class="due-head"><span>DATE DUE</span><span>READ BY THEN</span></p>
+            <ol class="due-rows" id="due-rows"></ol>
+          </div>
+          <div class="pocket" aria-hidden="true"><span>THE BACKROOMS<br>LENDING LIBRARY</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE PILE -->
+    <section class="pile-section" aria-labelledby="pile-title">
+      <h2 class="marker" id="pile-title">The Shelf</h2>
+      <p class="section-note">Everything the club has read, newest first. Hover a spine to read the back, click it to open the book on Goodreads.</p>
+      <div class="bookshelf">
+        <div class="spines-row" id="pile" role="group" aria-label="Books on the pile"></div>
+      </div>
+      <div class="pile-card" id="pile-card" aria-live="polite"></div>
+    </section>
+
+    <!-- HOUSE RULES -->
+    <section class="rules" aria-labelledby="rules-title">
+      <div class="rules-board reveal">
+        <h2 id="rules-title">House Rules</h2>
+        <ol id="rules"></ol>
+      </div>
+      <p class="talk">Want to talk about it between meetings? <a href="returns.html">Drop a note in the Returns box →</a></p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer-links"><a href="index.html">← Back to the shop floor</a></p>
+    <p>© <span id="year"></span> The Blurgblog · What happens in the Backrooms stays in the Backrooms</p>
+  </footer>
+
+  <script src="js/books.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/backrooms.js"></script>
+</body>
+</html>

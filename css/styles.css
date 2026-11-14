@@ -244,6 +244,20 @@ button { font: inherit; color: inherit; }
   .nav-links a { flex: none; font-size: 12px; padding: 5px 8px; }
 }
 .footer-links { margin: 0 0 6px; }
+.footer { position: relative; }
+/* hidden link in the bottom corner of the main page */
+.secret-link {
+  position: absolute; right: 10px; bottom: 6px;
+  font-family: "VT323", monospace; font-size: 13px; letter-spacing: .15em;
+  color: var(--ink-dim); text-decoration: none;
+  opacity: .12;
+  transition: opacity .3s, color .3s, text-shadow .3s;
+}
+.secret-link:hover, .secret-link:focus-visible {
+  opacity: 1; color: var(--neon-yellow);
+  text-shadow: 0 0 8px rgba(255,225,77,.8);
+  outline: none;
+}
 .footer-links a { color: var(--neon-yellow); }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; flex: 1; }
 .chip {
